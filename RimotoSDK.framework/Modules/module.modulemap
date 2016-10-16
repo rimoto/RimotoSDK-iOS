@@ -1,0 +1,10 @@
+framework module RimotoSDK {
+  umbrella header "RimotoSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module RimotoSDK.Swift {
+    header "RimotoSDK-Swift.h"
+}
