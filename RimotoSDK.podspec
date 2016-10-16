@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.platform            = :ios, '8.0'
 
   s.source              = { :git => 'https://github.com/rimoto/RimotoSDK-iOS.git', :tag => s.version.to_s }
-g
+
   s.source_files        = 'RimotoSDK.framework/**/*.{h}'
   s.module_map 			= 'RimotoSDK.framework/Modules/module.modulemap'
   s.preserve_paths      = 'RimotoSDK.framework'
