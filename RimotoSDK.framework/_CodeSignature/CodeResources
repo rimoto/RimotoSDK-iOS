@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/RimotoSDK-Swift.h</key>
 		<data>
-		1NByG4ohE0oJmlZV5rJVR4s2Fzs=
+		OkJYx4JYY7WxTfA6xgakgl9csJc=
 		</data>
 		<key>Headers/RimotoSDK.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8hv/i8Ct0nNQPojAb5swCDlBE8E=
+		gu4KY+dsnXWbiiVLMJtDfc1M0CQ=
 		</data>
 		<key>LICENSE.txt</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/RimotoSDK.swiftmodule/arm.swiftdoc</key>
 		<data>
-		O6wpAlkoC3Fx+i9Knbo1qjbQLH4=
+		l0Loub3u213+vJUrD6uprh+ftQM=
 		</data>
 		<key>Modules/RimotoSDK.swiftmodule/arm.swiftmodule</key>
 		<data>
-		9cRd+DTZ8jeMEo6Wrieyx2DFhXg=
+		JfmDeMhRs4gpqjF18jT6S6ghNM0=
 		</data>
 		<key>Modules/RimotoSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		5ipAYpqAc5nNKnVw0lyYuUekgeQ=
+		GPQwOiFP+4Vj+LuFDutKUFacTq0=
 		</data>
 		<key>Modules/RimotoSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		zlUsFi4MJGGjEy1aCikAf1Wkrfg=
+		k4apVwKtERYlSW2H9mvbcrthwcw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -66,11 +66,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1NByG4ohE0oJmlZV5rJVR4s2Fzs=
+			OkJYx4JYY7WxTfA6xgakgl9csJc=
 			</data>
 			<key>hash2</key>
 			<data>
-			qtey3xpiT/YZE1c1ltJPf4H5bRM3CMLO5lpE6JiPC8E=
+			QeIJpG86yaGBIIeiuswOsKxQ+kaOl6Gq75MZGc4K3MI=
 			</data>
 		</dict>
 		<key>Headers/RimotoSDK.h</key>
@@ -110,44 +110,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			O6wpAlkoC3Fx+i9Knbo1qjbQLH4=
+			l0Loub3u213+vJUrD6uprh+ftQM=
 			</data>
 			<key>hash2</key>
 			<data>
-			4nLt6nm52X6c8CQbaZazvSJBNDzFUWCEYB7woCWmfB0=
+			SgKFvxfwrdvXG3/uPwD3vOJEQFRp8Lh6ZjeKtpuNSYo=
 			</data>
 		</dict>
 		<key>Modules/RimotoSDK.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9cRd+DTZ8jeMEo6Wrieyx2DFhXg=
+			JfmDeMhRs4gpqjF18jT6S6ghNM0=
 			</data>
 			<key>hash2</key>
 			<data>
-			3B+6kNuYHQ3APqO2SLkktGJRzyD8DJGk0xLbrzLGzoE=
+			G/DZUwP/MgU39S5K0iI8Im2SfbeUolT66knRB7ZA9qc=
 			</data>
 		</dict>
 		<key>Modules/RimotoSDK.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5ipAYpqAc5nNKnVw0lyYuUekgeQ=
+			GPQwOiFP+4Vj+LuFDutKUFacTq0=
 			</data>
 			<key>hash2</key>
 			<data>
-			rq31eW/sNLcNEGnY3BOQ1MObHqgzR2SCvS5tAsq5Ad8=
+			Ls+PFQBgyw7zCJKYCDHrwOOcmxyBjKf1KNlCKefAQeY=
 			</data>
 		</dict>
 		<key>Modules/RimotoSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zlUsFi4MJGGjEy1aCikAf1Wkrfg=
+			k4apVwKtERYlSW2H9mvbcrthwcw=
 			</data>
 			<key>hash2</key>
 			<data>
-			eYezMJewuVhaUt7MYn55F1gejvzfNE1q1qIvSfcUO74=
+			43HKu4iDItZ1CUy+oQ459eEFk6sFVvsGnpI4ZG23GqE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
