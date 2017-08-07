@@ -134,6 +134,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import ObjectiveC;
 @import Foundation;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -172,6 +173,10 @@ SWIFT_CLASS("_TtC9RimotoSDK11AccessToken")
 @end
 
 
+@interface NSURLComponents (SWIFT_EXTENSION(RimotoSDK))
+@end
+
+
 @interface NSURLRequest (SWIFT_EXTENSION(RimotoSDK))
 @end
 
@@ -204,6 +209,10 @@ SWIFT_CLASS("_TtC9RimotoSDK6Rimoto")
 - (void)stopRimoto;
 - (BOOL)running SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)connectedViaWifi SWIFT_WARN_UNUSED_RESULT;
+- (void)ignoreRequest:(NSMutableURLRequest * _Nonnull)request ignore:(BOOL)ignore;
+- (void)ignoreRequest:(NSMutableURLRequest * _Nonnull)request;
+@property (nonatomic, readonly) NSInteger proxyPort;
+@property (nonatomic) BOOL blockAllAVMedia;
 @end
 
 @class NSURLSession;
@@ -228,6 +237,25 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task didCompleteWithError:(NSError * _Nullable)error;
 - (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task willPerformHTTPRedirection:(NSHTTPURLResponse * _Nonnull)response newRequest:(NSURLRequest * _Nonnull)request completionHandler:(void (^ _Nonnull)(NSURLRequest * _Nullable))completionHandler;
 - (nonnull instancetype)initWithRequest:(NSURLRequest * _Nonnull)request cachedResponse:(NSCachedURLResponse * _Nullable)cachedResponse client:(id <NSURLProtocolClient> _Nullable)client OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSBundle;
+@class UIWebView;
+
+SWIFT_CLASS("_TtC9RimotoSDK20WidgetViewController")
+@interface WidgetViewController : UIViewController <UIWebViewDelegate>
+- (void)launch;
+- (void)onDone:(id _Nonnull)sender;
+- (void)onBack:(id _Nonnull)sender;
+- (void)onForward:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibName bundle:(NSBundle * _Nullable)bundle OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)loadView;
+- (void)viewDidLoad;
+- (BOOL)webView:(UIWebView * _Nonnull)wv shouldStartLoadWithRequest:(NSURLRequest * _Nonnull)req navigationType:(UIWebViewNavigationType)navigationType SWIFT_WARN_UNUSED_RESULT;
+- (void)webViewDidStartLoad:(UIWebView * _Nonnull)wv;
+- (void)webView:(UIWebView * _Nonnull)wv didFailLoadWithError:(NSError * _Nonnull)error;
+- (void)webViewDidFinishLoad:(UIWebView * _Nonnull)wv;
 @end
 
 #pragma clang diagnostic pop
