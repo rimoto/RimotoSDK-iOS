@@ -135,6 +135,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ObjectiveC;
 @import Foundation;
 @import UIKit;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -256,11 +257,28 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)initWithRequest:(NSURLRequest * _Nonnull)request cachedResponse:(NSCachedURLResponse * _Nullable)cachedResponse client:(id <NSURLProtocolClient> _Nullable)client OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSBundle;
+
+SWIFT_CLASS("_TtC9RimotoSDK14SimpleSnackbar")
+@interface SimpleSnackbar : UIView
+- (nonnull instancetype)initWithMessage:(NSString * _Nonnull)message actionText:(NSString * _Nonnull)actionText duration:(NSTimeInterval)duration OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)showWithMessage:(NSString * _Nonnull)message;
+- (void)hide;
+- (void)resetTimer;
+- (void)cancelTimer;
+- (void)setupSubviewsWithMessage:(NSString * _Nonnull)message actionText:(NSString * _Nonnull)actionText;
+- (void)willMoveToSuperview:(UIView * _Nullable)newSuperview;
+- (void)didMoveToSuperview;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
 @class UIWebView;
+@class NSBundle;
 
 SWIFT_CLASS("_TtC9RimotoSDK20WidgetViewController")
 @interface WidgetViewController : UIViewController <UIWebViewDelegate>
+@property (nonatomic, strong) UIWebView * _Nullable webView;
+@property (nonatomic, strong) SimpleSnackbar * _Nullable snackbar;
 - (void)launch;
 - (void)onDone:(id _Nonnull)sender;
 - (void)onBack:(id _Nonnull)sender;
@@ -269,10 +287,15 @@ SWIFT_CLASS("_TtC9RimotoSDK20WidgetViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)loadView;
 - (void)viewDidLoad;
+- (void)loadInitialPage;
+- (UIWebView * _Nonnull)setupWebView SWIFT_WARN_UNUSED_RESULT;
+- (void)onWebViewCallbackWithResetTitle:(BOOL)resetTitle;
+@property (nonatomic, copy) NSString * _Nonnull navTitle;
 - (BOOL)webView:(UIWebView * _Nonnull)wv shouldStartLoadWithRequest:(NSURLRequest * _Nonnull)req navigationType:(UIWebViewNavigationType)navigationType SWIFT_WARN_UNUSED_RESULT;
 - (void)webViewDidStartLoad:(UIWebView * _Nonnull)wv;
 - (void)webView:(UIWebView * _Nonnull)wv didFailLoadWithError:(NSError * _Nonnull)error;
 - (void)webViewDidFinishLoad:(UIWebView * _Nonnull)wv;
+- (void)onDidLoadOrFail;
 @end
 
 #pragma clang diagnostic pop
