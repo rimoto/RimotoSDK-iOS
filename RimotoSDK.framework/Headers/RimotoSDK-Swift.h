@@ -279,6 +279,7 @@ SWIFT_CLASS("_TtC9RimotoSDK20WidgetViewController")
 @interface WidgetViewController : UIViewController <UIWebViewDelegate>
 @property (nonatomic, strong) UIWebView * _Nullable webView;
 @property (nonatomic, strong) SimpleSnackbar * _Nullable snackbar;
+- (void)launchIn:(UIViewController * _Nonnull)vc;
 - (void)launch;
 - (void)onDone:(id _Nonnull)sender;
 - (void)onBack:(id _Nonnull)sender;
