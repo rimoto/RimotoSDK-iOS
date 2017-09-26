@@ -7,4 +7,5 @@ framework module RimotoSDK {
 
 module RimotoSDK.Swift {
     header "RimotoSDK-Swift.h"
+    requires objc
 }
