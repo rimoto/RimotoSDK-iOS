@@ -253,6 +253,7 @@ SWIFT_CLASS("_TtC9RimotoSDK6Rimoto")
 @property (nonatomic) BOOL debug;
 - (void)onAccessTokenWithCb:(void (^ _Nonnull)(AccessToken * _Nullable))cb;
 @property (nonatomic) BOOL byPass;
+@property (nonatomic) BOOL operatorEligibilityBypass;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (Rimoto * _Nonnull)register:(NSString * _Nonnull)apiKey SWIFT_WARN_UNUSED_RESULT;
 + (Rimoto * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
