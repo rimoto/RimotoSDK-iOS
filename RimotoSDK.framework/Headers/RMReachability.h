@@ -58,4 +58,5 @@ extern NSString *kReachabilityChangedNotification;
 
 @end
 
+extern void RimotoRegisterSharedSession();
 

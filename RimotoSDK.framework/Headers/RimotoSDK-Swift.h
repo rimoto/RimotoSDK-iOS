@@ -278,6 +278,7 @@ SWIFT_CLASS("_TtC9RimotoSDK6Rimoto")
 
 SWIFT_CLASS("_TtC9RimotoSDK17RimotoInterceptor")
 @interface RimotoInterceptor : NSURLProtocol <NSURLSessionDataDelegate>
++ (void)enable;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull ignoreInterceptionKey;)
 + (NSString * _Nonnull)ignoreInterceptionKey SWIFT_WARN_UNUSED_RESULT;
 + (void)startWithRimoto:(Rimoto * _Nonnull)rimoto;
