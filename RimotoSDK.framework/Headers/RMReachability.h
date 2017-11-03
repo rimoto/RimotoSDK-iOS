@@ -57,6 +57,3 @@ extern NSString *kReachabilityChangedNotification;
 - (BOOL)connectionRequired;
 
 @end
-
-extern void RimotoRegisterSharedSession();
-
