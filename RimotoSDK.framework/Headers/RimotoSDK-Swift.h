@@ -244,7 +244,7 @@ SWIFT_CLASS("_TtC9RimotoSDK8Operator")
 /// rimotoInstance.delegate = self
 /// rimotoInstance.debug    = true
 /// rimotoInstance.startRimoto()
-/// NSURLProtocol.registerClass(RimotoInterceptor)
+/// RimotoInterceptor.enable()
 ///
 /// \endcode
 SWIFT_CLASS("_TtC9RimotoSDK6Rimoto")
