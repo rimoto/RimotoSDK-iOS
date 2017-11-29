@@ -309,6 +309,8 @@ SWIFT_CLASS("_TtC9RimotoSDK14SimpleSnackbar")
 
 
 
+
+
 @class UIWebView;
 @class NSBundle;
 
