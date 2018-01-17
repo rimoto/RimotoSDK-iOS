@@ -250,6 +250,12 @@ SWIFT_CLASS("_TtC9RimotoSDK6Rimoto")
 @interface Rimoto : NSObject
 @property (nonatomic, copy) NSString * _Nonnull user;
 @property (nonatomic) BOOL debug;
+/// Set a function the Rimoto SDK will use for logging.
+/// Note: This is not thread-safe, call it before accessing the Rimoto
+/// API.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nonnull logFunction)(NSString * _Nonnull);)
++ (void (^ _Nonnull)(NSString * _Nonnull))logFunction SWIFT_WARN_UNUSED_RESULT;
++ (void)setLogFunction:(void (^ _Nonnull)(NSString * _Nonnull))newValue;
 - (void)onAccessTokenWithCb:(void (^ _Nonnull)(AccessToken * _Nullable))cb;
 @property (nonatomic) BOOL byPass;
 @property (nonatomic) BOOL operatorEligibilityBypass;
