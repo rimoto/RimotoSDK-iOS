@@ -1,8 +1,33 @@
 [
   {
+    "name": "Cellcom",
+    "logo": "http://www.mrsimcard.com/images/logo_cellcom.png",
+    "type": "smsSetup",
+    "smsNumber": "+972526283962",
+    "smsText": "Rimoto ToGO",
+    "smsHint": "verification code:",
+    "smsPinCode": "1876",
+    "ids": [
+      {
+        "mcc": "425",
+        "mnc": "02"
+      }
+    ]
+  },
+  {
     "name": "Smart",
     "logo": "https://upload.wikimedia.org/wikipedia/en/1/1a/Smart_Communications_2016_logo.png",
-    "type": "default",
+    "type": "mpcc",
+    "portal": "http://roam.smart.com.ph/",
+    "server": "http://roam.smart.com.ph:86/smartph-agent/api/v2",
+    "tokenExpiration": "1440",
+    "tidHeader": "X-SVR-TID",
+    "tos": "http://roam.smart.com.ph/smartph-up/#/terms",
+    "packageCode": [
+      "Rimoto Test Pack",
+      "RoamFree prepaid",
+      "RoamFree postpaid"
+    ],
     "ids": [
       {
         "mcc": "515",

@@ -224,7 +224,9 @@ SWIFT_CLASS("_TtC9RimotoSDK11AccessToken")
 
 SWIFT_CLASS("_TtC9RimotoSDK8Operator")
 @interface Operator : NSObject
+/// Operator name, for example ‘Smart’
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
+/// Optional operator logo, URL
 @property (nonatomic, readonly, copy) NSURL * _Nullable logo;
 @property (nonatomic, readonly, copy) NSString * _Nonnull description;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
