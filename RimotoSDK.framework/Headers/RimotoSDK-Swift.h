@@ -206,6 +206,15 @@ SWIFT_CLASS("_TtC9RimotoSDK11AccessToken")
 - (id _Nullable)objectForKeyedSubscript:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 @end
 
+@class NSBundle;
+
+SWIFT_CLASS("_TtC9RimotoSDK16MpccActivationVC")
+@interface MpccActivationVC : UIViewController
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
+@end
+
 
 
 
@@ -311,12 +320,20 @@ SWIFT_CLASS("_TtC9RimotoSDK14SimpleSnackbar")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+@class UIColor;
+
+@interface UILabel (SWIFT_EXTENSION(RimotoSDK))
+- (void)makeClickableWithRange:(NSRange)range url:(NSString * _Nonnull)url color:(UIColor * _Nonnull)color;
+- (void)makeClickableWithString:(NSString * _Nonnull)string url:(NSString * _Nonnull)url color:(UIColor * _Nonnull)color;
+@end
+
+
+
 
 
 
 
 @class UIWebView;
-@class NSBundle;
 
 SWIFT_CLASS("_TtC9RimotoSDK20WidgetViewController")
 @interface WidgetViewController : UIViewController <UIWebViewDelegate>
