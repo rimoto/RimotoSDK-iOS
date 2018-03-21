@@ -22,7 +22,7 @@
     "server": "http://roam.smart.com.ph:86/smartph-agent/api/v2",
     "tokenExpiration": "1440",
     "tidHeader": "X-SVR-TID",
-    "tos": "http://roam.smart.com.ph/smartph-up/#/terms",
+    "tos": "http://roam.smart.com.ph:86/smartph-up/#/terms",
     "packageCode": [
       "Rimoto Test Pack",
       "RoamFree prepaid",
