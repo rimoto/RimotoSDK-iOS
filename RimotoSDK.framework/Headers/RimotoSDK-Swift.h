@@ -320,6 +320,8 @@ SWIFT_CLASS("_TtC9RimotoSDK14SimpleSnackbar")
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
+
+
 @class UIColor;
 
 @interface UILabel (SWIFT_EXTENSION(RimotoSDK))
