@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "RimotoSDK"
-  s.version             = "0.9.1"
+  s.version             = "0.9.2"
   s.summary             = "Rimoto allows apps to sponsor their data-consumption."
   s.homepage            = "http://www.rimoto.com"
   s.license             = {
